@@ -11,7 +11,6 @@ public class MoveSscript : MonoBehaviour {
     // Use this for initialization
     void Start () {
         rigidbody = GetComponent<Rigidbody2D>();
-
     }
 	
 	// Update is called once per frame
