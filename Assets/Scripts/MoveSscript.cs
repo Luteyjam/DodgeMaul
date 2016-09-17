@@ -3,12 +3,12 @@ using System.Collections;
 
 public class MoveSscript : MonoBehaviour {
 
-    protected new Rigidbody2D rigidbody;
+    public new Rigidbody2D rigidbody;
     private float speed = 25;
 
     // Use this for initialization
     void Start () {
-        rigidbody = GetComponentInParent<Rigidbody2D>();
+        rigidbody = GetComponent<Rigidbody2D>();
 
     }
 	
@@ -16,19 +16,19 @@ public class MoveSscript : MonoBehaviour {
 	void Update () {
 
         //Movement
-        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        if (Input.GetKey(KeyCode.LeftArrow))
         {
             rigidbody.AddForce(new Vector2(-speed, 0));
         }
-        if (Input.GetKeyDown(KeyCode.RightArrow))
+        if (Input.GetKey(KeyCode.RightArrow))
         {
             rigidbody.AddForce(new Vector2(speed, 0));
         }
-        if (Input.GetKeyDown(KeyCode.UpArrow))
+        if (Input.GetKey(KeyCode.UpArrow))
         {
             rigidbody.AddForce(new Vector2(0,speed));
         }
-        if (Input.GetKeyDown(KeyCode.DownArrow))
+        if (Input.GetKey(KeyCode.DownArrow))
         {
             rigidbody.AddForce(new Vector2(0, -speed));
         }
