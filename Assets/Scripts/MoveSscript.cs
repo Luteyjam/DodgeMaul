@@ -5,7 +5,7 @@ public class MoveSscript : MonoBehaviour {
 
     public new Rigidbody2D rigidbody;
     private float speed = 10;
-    GameObject AttackSprite;
+    public GameObject AttackSprite;
     public new Rigidbody2D rb;
 
     // Use this for initialization
