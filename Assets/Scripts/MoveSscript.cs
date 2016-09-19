@@ -49,8 +49,10 @@ public class MoveSscript : MonoBehaviour {
     public void Attack(Vector3 s)
     {
         GameObject attack = (GameObject)Instantiate(AttackSprite, transform.position, transform.rotation);
+        Physics2D.IgnoreCollision(attack.GetComponent<CircleCollider2D>(), rigidbody.GetComponentInParent<CircleCollider2D>(), true);
         rb = attack.GetComponent<Rigidbody2D>();
-        rb.AddForce(s);
+        rb.AddForce(s * 10F);
+        Physics2D.IgnoreCollision(attack.GetComponent<CircleCollider2D>(), rigidbody.GetComponentInParent<CircleCollider2D>(), true);
     }
     
 }
