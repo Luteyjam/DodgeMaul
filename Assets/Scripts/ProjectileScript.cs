@@ -12,7 +12,7 @@ public class ProjectileScript : MonoBehaviour {
         rigidbody = GetComponent<Rigidbody2D>();
         o = this.gameObject;
         count = 0;
-        Physics2D.IgnoreCollision(this.gameObject.GetComponent<Collider2D>(), GameObject.FindGameObjectWithTag("Player").GetComponent<Collider2D>(), true);
+        Physics2D.IgnoreCollision(o.GetComponent<Collider2D>(), GameObject.FindGameObjectWithTag("Player").GetComponent<Collider2D>(), true);
         isColliding = true;
     }
 	
@@ -36,7 +36,7 @@ public class ProjectileScript : MonoBehaviour {
         {
             count += 1;
         }
-        if (coll.gameObject.tag == "player")
+        if (coll.gameObject.tag == "Enemy")
         {
             Destroy(coll.gameObject);
         }
