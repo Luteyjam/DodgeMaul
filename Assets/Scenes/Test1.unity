@@ -541,7 +541,6 @@ GameObject:
   - 114: {fileID: 1541427842}
   - 50: {fileID: 1541427839}
   - 58: {fileID: 1541427843}
-  - 58: {fileID: 1541427844}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Player
@@ -586,7 +585,7 @@ Rigidbody2D:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1541427837}
   m_UseAutoMass: 1
-  m_Mass: 0.7853982
+  m_Mass: 1
   m_LinearDrag: 0.2
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -640,20 +639,6 @@ CircleCollider2D:
   m_Density: 1
   m_Material: {fileID: 6200000, guid: ed30bc79406efc447bd04440150bf808, type: 2}
   m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
---- !u!58 &1541427844
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1541427837}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 6200000, guid: ed30bc79406efc447bd04440150bf808, type: 2}
-  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2

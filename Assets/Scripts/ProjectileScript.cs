@@ -13,7 +13,7 @@ public class ProjectileScript : MonoBehaviour {
         o = this.gameObject;
         count = 0;
         Physics2D.IgnoreCollision(this.gameObject.GetComponent<Collider2D>(), GameObject.FindGameObjectWithTag("Player").GetComponent<Collider2D>(), true);
-        isColliding = false;
+        isColliding = true;
     }
 	
 	// Update is called once per frame
